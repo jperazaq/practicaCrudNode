@@ -4,7 +4,7 @@
     "description": "Es una practica de node",
     "main": "index.js",
     "scripts": {
-        "start": "node l practicaCrudNode/src/app.js",
+        "start": "node  practicaCrudNode/src/app.js",
         "dev": "nodemon practicaCrudNode/src/app.js"
     },
     "author": "Julio Peraza",
