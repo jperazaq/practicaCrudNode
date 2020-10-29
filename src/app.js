@@ -13,6 +13,7 @@ mongoose.connect('mongodb://localhost/crud-mongo', { useUnifiedTopology: true, u
 // Importing Routes
 
 const index_Routes = require('./routes/index.js');
+const { urlencoded } = require('body-parser');
 
 
 // settings
@@ -34,6 +35,8 @@ app.use(morgan('dev'));
 
 app.use('/', index_Routes);
 app.use(express.urlencoded({extended: false}))
+
+
 
 // ahora se pone a escuchar al puerto que escojamos, y verificamos enviando un mensaje por consola
 
